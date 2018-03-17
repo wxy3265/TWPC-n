@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="请输入"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="A"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="8"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:text="B"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="8"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="C"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="8"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:text="D"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n边形内角和："
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/hint1"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(n - 2) * 180˚"
+            android:id="@+id/out1"
+            android:layout_weight="7"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正n边形每个内角度数："
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/hint2"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(n - 2) * 180˚ / n"
+            android:id="@+id/out2"
+            android:layout_weight="7"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每个内角为n˚正多边形边数："
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/hint3"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="360 / （180 - a)"
+            android:id="@+id/out3"
+            android:layout_weight="7"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内角和为n˚多边形边数："
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/hint4"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a / 180 + 2"
+            android:id="@+id/out4"
+            android:layout_weight="7"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
